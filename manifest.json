@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "WCv2 Test",
+  "version": "1.0.0",
+  "action": { "default_popup": "index.html" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js https://www.gstatic.com https://apis.google.com;"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  }
+}
